@@ -2,24 +2,46 @@
 // Learning Handlebars
 // March 9, 2019
 
+const cast = {
+  characters: [
+    {
+      name: 'Jon Snow',
+      shortCode: 'jon-snow',
+      actor: 'Kit Harrington',
+      house: 'Stark',
+      location: undefined,
+    },
+    {
+      name: 'Tyrion Lannister',
+      shortCode: 'tyron',
+      actor: 'Peter Dinklage',
+      house: 'Tyron',
+      location: 'Lannister',
+    },
+    {
+      name: 'Brienne of Tarth',
+      shortCode: 'brienne',
+      actor: 'Gwendoline Christie',
+      house: 'Tarth',
+      location: 'Tarth',
+    },
+    {
+      name: 'Helen of Patron',
+      shortCode: 'Porgy',
+      actor: 'Anna Gratia',
+      house: 'Golly',
+      location: 'Golly',
+    },
+  ],
+};
+
 jQuery(document).ready(() => {
-  // change the footer message at the bottom of the page
+  // document ready message
   jQuery('footer small').text('Ready to Manipulate!');
 
-  // jQuery("#rect")
-  //   // animate width to 200px on mouseover
-  //   .on("mouseover", () => {
-  //     jQuery("#rect").animate({ width: 200 }, 300);
-  //   })
-  //
-  //   // animate width to 100px on mouseout
-  //   .on("mouseout", () => {
-  //     jQuery("#rect").animate({ width: 100, height: 100 }, 300);
-  //   })
-  //
-  //   // increase height by 100px on click
-  //   .on("click", () => {
-  //     jQuery("#rect").animate({ height: "+=100" }, "slow");
-  //   });
+  // get html template and compile date
+  let character = Handlebars.compile(jQuery('#character-template').text());
+
+  // render template
+  jQuery('.character-list-container').html(character(cast));
 });
-// --- end of code ----

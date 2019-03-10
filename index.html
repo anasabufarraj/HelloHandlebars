@@ -2,19 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Hello Webpack</title>
+    <title>Hello Handlebars</title>
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <h1>Hello Handlebars</h1>
+    <h1>Game of Throne</h1>
+
+    <!-- Characters -->
+    <div class="character-list-container">
+      <script id="character-template" type="text/x-handlebars-template">
+        {{#each characters}}
+          <div class="character">
+            <h2>{{name}}</h2>
+            <ul>
+              <li>Actor: {{actor}}</li>
+              <li>House: {{house}}</li>
+              <li>Whereabouts: {{#if location}}{{location}}
+                {{else if house}}<small>same as House</small>
+                {{else}}<small>unknown</small>{{/if}}</li>
+            </ul>
+          </div>
+        {{/each}}
+      </script>
+    </div>
 
     <footer>
       <small>jQuery is Not loaded!</small>
     </footer>
-
     <script src="scripts/jquery-3.3.1.js"></script>
     <script src="scripts/handlebars-v4.1.0.js"></script>
     <script src="scripts/script.js"></script>
   </body>
 </html>
-<!--EOC-->
