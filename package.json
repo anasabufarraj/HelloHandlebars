@@ -10,10 +10,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "lite-server": "^2.4.0"
-  },
   "dependencies": {
     "handlebars": "^4.1.0"
+  },
+  "devDependencies": {
+    "lite-server": "^2.4.0"
   }
 }

@@ -1,0 +1,32 @@
+{
+  "characters": [
+    {
+      "name": "Jon Snow",
+      "shortCode": "jon-snow",
+      "actor": "Kit Harrington",
+      "house": "Stark",
+      "location": false
+    },
+    {
+      "name": "Tyrion Lannister",
+      "shortCode": "tyron",
+      "actor": "Peter Dinklage",
+      "house": "Tyron",
+      "location": "Lannister"
+    },
+    {
+      "name": "Brienne of Tarth",
+      "shortCode": "brienne",
+      "actor": "Gwendoline Christie",
+      "house": "Tarth",
+      "location": "Tarth"
+    },
+    {
+      "name": "Helen of Patron",
+      "shortCode": "Porgy",
+      "actor": "Anna Gratia",
+      "house": "Golly",
+      "location": "Golly"
+    }
+  ]
+}
