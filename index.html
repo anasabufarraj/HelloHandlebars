@@ -16,7 +16,11 @@
             <h2>{{name}}</h2>
             <ul>
               <li>Actor: {{actor}}</li>
-              <li>House: {{house}}</li>
+              {{#with house}}
+                <li>House: {{name}}</li>
+                <li>Seat: {{house.seat}}</li>
+                <li>Words: {{words}}</li>
+              {{/with}}
               <li>Location: {{#if location}}{{location}}
                {{else}}<small>unknown</small>{{/if}}
               </li>

@@ -4,7 +4,11 @@
       "name": "Jon Snow",
       "shortCode": "jon-snow",
       "actor": "Kit Harrington",
-      "house": "Stark",
+      "house": {
+        "name": "Stark",
+        "seat": "Winterfell",
+        "words": "Winter is coming"
+      },
       "location": false
     },
     {

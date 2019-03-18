@@ -8,7 +8,7 @@ jQuery(document).ready(() => {
 
   // get html template and compile date
   let compiledTemplate = Handlebars.compile(
-    jQuery('#character-template').text(),
+    jQuery('#character-template').text()
   );
 
   // get data with AJAX, when don, render the template

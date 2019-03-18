@@ -1,7 +1,7 @@
 {
   "name": "scripts",
   "version": "1.0.0",
-  "description": "",
+  "description": "Learning Handlebars",
   "main": "scripts/handlebars-v4.1.0.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
